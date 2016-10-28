@@ -1,0 +1,44 @@
+<h2>{{title}}</h2>
+<table class="table table-striped">
+	<thead> 
+		<tr>
+			<th *ngFor='let head of headers'>{{head}}</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr *ngFor='let work of workers'>
+           <td *ngFor="let item of headers">{{work[item]}}</td>
+		</tr>
+	</tbody>
+</table>
+
+<!--<div *ngFor="let hero of heroes; let i=index">  
+  {{i + 1}} - {{hero.fullName}}
+</div>  -->
+<!--<table class="table table-striped">
+	<thead>
+		<tr>
+			<th>lastName</th>
+			<th>name</th>
+			<th>Cargo</th>
+			<th>Planta</th>
+			<th>Actions</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr *ngFor='let work of workers'>
+			<td>{{work.lastName}}</td>
+			<td>{{work.name}}</td>
+			<td>{{work.charge.name}}</td>
+			<td>
+				<ol>
+					<li *ngFor='let item of work.plants'>{{item.name}}</li>
+				</ol>
+			</td>
+			<td>
+				<a class="btn btn-primary" (click)="assign(work)">Asignar</a>
+				<a class="btn btn-primary" (click)="onSelect(work)">Editar</a>
+			</td>
+		</tr>
+	</tbody>
+</table>-->
