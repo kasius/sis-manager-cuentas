@@ -1,0 +1,42 @@
+<h1>APIS</h1>
+<!--<div>    
+    <h3>Api Geyser:</h3>
+    <input type="text" value="{{apiResource.apiGeyser}}" class="form-control">
+</div>
+<div>   
+    <h3>Api Relay Race:</h3>
+    <input type="text" value="{{apiResource.apiRelayRace}}" class="form-control">
+</div>
+<div>   
+    <h3>Api Ohsas:</h3>
+    <input type="text" class="form-control">
+</div>
+<div>
+    <button type="btn">Save Changes</button>
+</div>-->
+
+<form #apisForm="ngForm">
+	<div class="row-flex">
+		<div class="element-form-1">
+			<div class="form-group">
+				<label for="name">Api Geyser: </label>
+				<input type="text" class="form-control" [(ngModel)]="apiResource.apiGeyser" id="apiResource.apiGeyser" required name="apiGeyser">
+			</div>
+		</div>
+		<div class="element-form-1">
+			<div class="form-group">
+				<label for="name">Api Relay Race: </label>
+				<input type="text" class="form-control" [(ngModel)]="apiResource.apiRelayRace" id="apiResource.apiRelayRace" required name="apiRelayRace">
+			</div>
+		</div>
+        <div class="element-form-1">
+			<div class="form-group">
+				<label for="name">Api Relay Race: </label>
+				<input type="text" class="form-control" [(ngModel)]="apiResource.apiOhsas" id="apiResource.apiOhsas" required name="apiOhsas">
+			</div>
+		</div>
+    </div>
+    <div class="element-form-1">
+        <button type="button" [disabled]="!apisForm.form.valid" (click)="changesApis(apiResource)" class="btn btn-default">Save Changes</button>
+    </div>
+</form>

@@ -4,7 +4,10 @@ import { WGeyserComponent } from '../wgeyser/index';
 
 
 export const WorkerRoutes: Route[] = [
-  {path: 'workGeyser', component: WorkerComponent},
+  {path: '', component: WorkerComponent},
+  {path: 'workGeyser', component: WorkerComponent}, 
   {path: 'workRelay', component: WGeyserComponent},
   {path: 'workOhsas', component: WorkerComponent}
 ];
+
+// workGeyser

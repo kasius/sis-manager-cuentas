@@ -1,12 +1,15 @@
 export class Work {
-  aspNetUserId: string;
-  contact: string;
-  geyserUserId: string;
-  lastName: string;
   name:string;
-  role:number;
-  roleId:number;
+  lastName: string;
+  contact: string;
+  action:string;
+  // geyserUserId: string;
+  // role:number;
+  // roleId:number;
   timeZone:string;
+  charge:Object;
+  plants:Object;
+  aspNetUserId: string;
 }
 
 // export class WorkRegister {
